@@ -12,3 +12,12 @@ from .serializers import *
 class RestaurantViewSet(ModelViewSet):    
         queryset = Restaurant.objects.all()
         serializer_class = RestaurantSerializerModel
+
+
+class ProductViewSet(ModelViewSet):
+        queryset = Product.objects.all()
+        serializer_class = ProdcutsSerializerModel
+
+class Products_RestaurantViewSet(ModelViewSet):
+        queryset = Products_Restaurant.objects.all()
+        serializer_class = Products_RestaurantSerializerModel
