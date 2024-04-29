@@ -16,3 +16,13 @@ class Products_RestaurantSerializerModel(serializers.ModelSerializer):
     class Meta:
         model = Products_Restaurant
         fields = "__all__"    
+
+class TablesSerializerModel(serializers.ModelSerializer):
+    class Meta:
+        model = Table
+        fields="__all__"
+
+class Tables_RestaurantSerializerModel(serializers.ModelSerializer):
+    class Meta:
+        model = Tables_Restaurant
+        fields = "__all__"

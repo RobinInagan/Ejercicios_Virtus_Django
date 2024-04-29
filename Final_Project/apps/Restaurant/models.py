@@ -24,3 +24,13 @@ class Products_Restaurant(models.Model):
     product = models.ForeignKey(Product,on_delete = models.DO_NOTHING)
     restaurant = models.ForeignKey(Restaurant, on_delete = models.DO_NOTHING)
 
+class Table(models.Model):
+    number = models.IntegerField()
+    personCapacity = models.IntegerField()
+
+    def __str__(self) ->str:
+        return str('Table Number = '+ str(self.number))
+
+class Tables_Restaurant(models.Model):
+    table = models.ForeignKey(Table,on_delete=models.DO_NOTHING)
+    restaurant = models.ForeignKey(Restaurant,on_delete=models.DO_NOTHING)
