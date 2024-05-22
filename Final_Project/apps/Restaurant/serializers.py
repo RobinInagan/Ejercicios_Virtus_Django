@@ -6,17 +6,6 @@ class RestaurantSerializerModel(serializers.ModelSerializer):
         model= Restaurant
         fields="__all__"
 
-class ProdcutsSerializerModel(serializers.ModelSerializer):
-    class Meta:
-        model = Product
-        fields = "__all__"
-
-
-class Products_RestaurantSerializerModel(serializers.ModelSerializer):
-    class Meta:
-        model = Products_Restaurant
-        fields = "__all__"    
-
 class TablesSerializerModel(serializers.ModelSerializer):
     class Meta:
         model = Table
@@ -25,9 +14,4 @@ class TablesSerializerModel(serializers.ModelSerializer):
 class Tables_RestaurantSerializerModel(serializers.ModelSerializer):
     class Meta:
         model = Tables_Restaurant
-        fields = "__all__"
-
-class WaiterSerializerModel(serializers.ModelSerializer):
-    class Meta:
-        model = Waiter
         fields = "__all__"

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #Self Modules
     'apps.Restaurant',
     'apps.User',
+    'apps.Product',
     #Other Modules
     'rest_framework'
 ]
