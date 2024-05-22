@@ -34,3 +34,12 @@ class Table(models.Model):
 class Tables_Restaurant(models.Model):
     table = models.ForeignKey(Table,on_delete=models.DO_NOTHING)
     restaurant = models.ForeignKey(Restaurant,on_delete=models.DO_NOTHING)
+
+
+class Waiter(models.Model):
+    user = models.ForeignKey(Users,on_delete=models.DO_NOTHING)
+    charge = models.CharField(max_length=100)
+
+class Waiter_Shift(models.Model):
+    waiter = models.ForeignKey(Waiter,on_delete=models.DO_NOTHING)
+    start_date = models.TimeField()

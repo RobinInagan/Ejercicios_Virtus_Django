@@ -16,8 +16,12 @@ class TableAdmin(admin.ModelAdmin):
 class Tables_RestaurantAdmin(admin.ModelAdmin):
     list_display =["table","restaurant"]
 
+class WaiterAdmin(admin.ModelAdmin):
+    list_display =["user","charge"]
+
 admin.site.register(Restaurant,RestaurantAdmin)
 admin.site.register(Product,ProductAdmin)
 admin.site.register(Products_Restaurant,Products_RestaurantAdmin)
 admin.site.register(Table,TableAdmin)
 admin.site.register(Tables_Restaurant,Tables_RestaurantAdmin)
+admin.site.register(Waiter,WaiterAdmin)

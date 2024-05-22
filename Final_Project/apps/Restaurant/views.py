@@ -29,3 +29,7 @@ class TableViewSet(ModelViewSet):
 class Tables_RestaurantViewSet(ModelViewSet):
         queryset = Tables_Restaurant.objects.all()
         serializer_class = Tables_RestaurantSerializerModel
+
+class WaiterViewSet(ModelViewSet):
+        queryset = Waiter.objects.all()
+        serializer_class = WaiterSerializerModel

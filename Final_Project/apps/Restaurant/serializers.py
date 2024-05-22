@@ -26,3 +26,8 @@ class Tables_RestaurantSerializerModel(serializers.ModelSerializer):
     class Meta:
         model = Tables_Restaurant
         fields = "__all__"
+
+class WaiterSerializerModel(serializers.ModelSerializer):
+    class Meta:
+        model = Waiter
+        fields = "__all__"
